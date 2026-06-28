@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[4,)"  # NeoForge 对应的 FML 加载器版本
+
+# 你的模组许可证（此处填写为 MIT）
+license="MIT"
+
+# 你的模组信息
+[[mods]]
+modId="everlastingarmor"      # 你的模组ID（必须为小写字母、数字或下划线）
+version="1.0.0"               # 你的模组版本号
+displayName="Everlasting Armor" # 游戏内显示的模组名称
+
+# 你的模组介绍
+description='''
+这是一个改变了工具和装备耐久机制的模组。
+当工具、武器或盔甲的耐久度归零时，它们将不会消失，而是转变为“破损”状态。
+破损状态的物品无法被使用或穿戴。
+你可以通过以下两种方式修复它们：
+1. 在铁砧中使用对应的修复材料进行修复。
+2. 通过附魔“经验修补”来消耗经验值恢复耐久。
+'''
+
+# 声明模组作者（可选，建议填写）
+# authors="你的名字"
+authors="dysakura"
+# ---------- 依赖配置 ----------
+[[dependencies.everlastingarmor]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.233,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.everlastingarmor]]
+modId="minecraft"
+type="required"
+versionRange="[1.21,1.21.2)"
+ordering="NONE"
+side="BOTH"
